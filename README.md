@@ -4,7 +4,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://serhii-bielik.github.io/fm-testimonials-grid-section-main/)
+- Live Site URL: [live preview](https://serhii-bielik.github.io/fm-testimonials-grid-section-main/)
 - Frontend Mentor - [@serhii-bielik](https://www.frontendmentor.io/profile/serhii-bielik)
 
 ### Screenshot
