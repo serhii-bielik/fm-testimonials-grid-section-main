@@ -67,14 +67,24 @@ body {
 }
 
 .content {
+  position: relative;
   min-width: 200px;
   width: 100%;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background-color: var(--clr-white);
+  z-index: 1;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.content__bg-quote::after {
+  z-index: -1;
+  top: 0;
+  right: 2rem;
+  content: url("./images/bg-pattern-quotation.svg");
+  position: absolute;
 }
 
 .content__bg-violet {
@@ -154,5 +164,9 @@ body {
       "daniel daniel jonathan kira"
       "jeanette patrick patrick kira";
       justify-content: stretch;
+  }
+
+  .content__bg-quote::after {
+    right: 5rem;
   }
 }
