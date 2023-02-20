@@ -9,18 +9,27 @@
 }
 
 :root {
-  --clr-violet: hsl(263, 55%, 52%);
-  --clr-grayish-blue: hsl(217, 19%, 35%);
-  --clr-blackish-blue: hsl(219, 29%, 14%);
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-light-gray: hsl(0, 0%, 81%);
-  --clr-light-grayish-blue: hsl(210, 46%, 95%);
+  --clr-violet: rgba(117, 65, 200, 1);
+  --clr-online: #564190;
+  --clr-blackish-blue: rgba(25, 33, 46, 1);
+  --clr-light-gray: rgba(207, 207, 207, 1);
+
+  --clr-grayish-blue: rgba(72, 85, 106, 1);
+  --clr-grayish-blue-50: rgba(72, 85, 106, 0.5);
+  --clr-grayish-blue-70: rgba(72, 85, 106, 0.7);
+
+  --clr-light-grayish-blue: rgba(236, 242, 248, 1);
+  --clr-light-grayish-blue-50: rgba(236, 242, 248, 0.5);
+  --clr-light-grayish-blue-70: rgba(236, 242, 248, 0.7);
+  --clr-white: rgb(255, 255, 255);
 }
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 13px;
+  color: var(--clr-grayish-blue);
+  background-color: var(--clr-light-grayish-blue);
 }
 
 .container {
@@ -28,4 +37,76 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;  
+}
+
+.content {
+  min-width: 320px;
+  width: 90%;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-white);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.content__bg-violet {
+  background-color: var(--clr-violet);
+}
+.content__bg-dark {
+  background-color: var(--clr-grayish-blue);
+}
+.content__bg-darkest {
+  background-color: var(--clr-blackish-blue);
+}
+.content__text-light {
+  color: var(--clr-light-grayish-blue);
+}
+.content__text-light-50 {
+  color: var(--clr-light-grayish-blue-50);
+}
+.content__text-light-70 {
+  color: var(--clr-light-grayish-blue-70);
+}
+
+.content__text-dark-50 {
+  color: var(--clr-grayish-blue-50);
+}
+.content__text-dark-70 {
+  color: var(--clr-grayish-blue-70);
+}
+
+.content__header {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.content__header-user {
+  margin-left: 1rem;
+}
+
+.content__header-avatar {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+.content__header-avatar-online {
+  border: 2px solid var(--clr-online);
+}
+
+.content__header-verified {
+  font-size: 0.7rem;
+}
+
+.content__user-highlight {
+  font-size: 1.31rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content__user-story {
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
